@@ -2,12 +2,12 @@
 # Ecommerce
 Ecommerce Web Application built with Angular &amp; RxJS, featuring product filtering, detailed views, category routing, dynamic shopping cart management, and responsive UI.
 =======
-# 🛒 E-Commerce Web Application
+# E-Commerce Web Application
 
 A dynamic and responsive E-Commerce web application built using **Angular 17**, **RxJS**, and **PrimeFlex/SCSS**. The application simulates a real-world shopping experience featuring product categories, real-time cart state management, product details, and search capabilities powered by a RESTful Mock API (`json-server`).
 
 ---
-## ✨ Key Features
+## Key Features
 
 - **Product Catalog & Specific Categories:** Dynamic routing with `ActivatedRoute` and `paramMap` to render products filtered by category.
 - **Product Details View:** Fetching single product details via dynamic URL parameters.
@@ -17,7 +17,7 @@ A dynamic and responsive E-Commerce web application built using **Angular 17**, 
 - **Responsive Design:** Fully responsive layout built using Flexbox, CSS Grid, and Utility classes.
 
 ---
-## 🛠️ Tech Stack & Tools
+## Tech Stack & Tools
 
 - **Framework:** Angular 17 (Standalone Components)
 - **State Management & Reactive Programming:** RxJS (`BehaviorSubject`, `Observables`, `paramMap`)
@@ -28,7 +28,7 @@ A dynamic and responsive E-Commerce web application built using **Angular 17**, 
 - **Version Control:** Git & GitHub
 
 ---
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to run the project locally:
 
