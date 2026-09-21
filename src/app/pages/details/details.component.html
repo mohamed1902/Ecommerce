@@ -1,0 +1,56 @@
+<section>
+  <div class="container">
+    <div class="grid align-items-center pb-4 justify-content-center">
+      <div class="md:col-6">
+        <figure>
+          <img class="w-full" [src]="productDetails.image" [alt]="productDetails.title">
+        </figure>
+      </div>
+      <div class="md:col-6">
+        <div class="content py-1 w-full">
+          <p class="font-bold text-orange-500 mt-1 mb-3">{{productDetails.title}}</p>
+          <p class="font-medium text-sm my-1">{{productDetails.description}}</p>
+          <div class="flex align-items-center gap-2 mb-4">
+            <div class="price flex gap-2 align-items-center">
+              <span class="text-color-secondary font-bold">
+                <del>14</del>
+              </span>
+              <span class="new-price font-bold">
+                <span class="text-green-400">$</span>{{productDetails.price}}
+              </span>
+            </div>
+            <div class="offer">
+              <span class="bg-red-500 text-white p-1 border-circle text-xs">%{{productDetails.discount}}</span>
+              <span class="font-bold text-xs px-1">off</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-content-between align-items-center capitalize">
+              <p class="font-bold text-color-secondary my-1">brand:</p>
+              <p class="text-orange-500 font-bold my-1">{{productDetails.brand}}</p>
+            </div>
+            <div class="flex justify-content-between align-items-center capitalize">
+              <p class="font-bold text-color-secondary my-1">category:</p>
+              <p class="text-orange-500 font-bold my-1">{{productDetails.category}}</p>
+            </div>
+            <div class="flex justify-content-between align-items-center capitalize">
+              <p class="font-bold text-color-secondary my-1">discount:</p>
+              <p class="text-orange-500 font-bold my-1">{{productDetails.discount}}</p>
+            </div>
+          </div>
+          @if (!productDetails.isAddToCart) {
+          <p-button (click)="onAddToCart(productDetails); productDetails.isAddToCart = true" label="Add To Cart" severity="warning"
+            icon="pi pi-cart-plus text-2xl" iconPos="right" styleClass="w-full my-2 uppercase" />
+          }
+          @if (productDetails.isAddToCart) {
+          <p-button [routerLink]="['/cart/',productDetails.id]" label="Go To Cart" severity="contrast"
+            icon="pi pi-shopping-cart text-2xl" iconPos="right" styleClass="w-full my-2 uppercase" />
+          }
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

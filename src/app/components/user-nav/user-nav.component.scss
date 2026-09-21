@@ -1,0 +1,26 @@
+.p-badge {
+  background-color: #FA8E42;
+}
+
+.user-name {
+  border-radius: 5px;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+
+    border: {
+      style: solid;
+      width: 15px;
+      color: #FA8E42 transparent transparent transparent;
+    }
+  }
+}
+
+.logout {
+  bottom: 0;
+  transform: translate(-50%, calc(100% + 15px));
+  border-radius: 5px;
+}

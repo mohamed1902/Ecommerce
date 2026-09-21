@@ -1,0 +1,33 @@
+<div class="card">
+  <p-menubar [model]="items">
+    <ng-template pTemplate="start">
+      <figure class="my-0 mx-2">
+        <img class="w-2rem" src="./assets/imgs/logo.png" alt="Logo">
+      </figure>
+    </ng-template>
+    <ng-template pTemplate="item" let-item let-root="root">
+      <a [routerLink]="item?.['path']" pRipple class="flex align-items-center p-menuitem-link">
+        <span [class]="item.icon"></span>
+        <span class="ml-2">{{ item.label }}</span>
+      </a>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="card flex justify-content-center align-items-center gap-3">
+        <a [routerLink]="['/cart']">
+          <i class="pi pi-shopping-cart text-3xl" pBadge [value]="cartCount"></i>
+        </a>
+        <a (click)="logOut = !logOut" class="user-name p-3 text-white bg-orange-400 font-bold capitalize relative cursor-pointer">
+          <span>{{username}}</span>
+          @if (logOut) {
+          <a
+            (click)="onLogout()"
+            class="logout py-2 px-2 text-white bg-orange-400 font-bold absolute left-50 flex align-items-center gap-3">
+            <span>logout</span>
+            <span class="pi pi-sign-out"></span>
+          </a>
+          }
+        </a>
+      </div>
+    </ng-template>
+  </p-menubar>
+</div>

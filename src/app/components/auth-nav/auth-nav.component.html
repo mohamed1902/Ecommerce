@@ -1,0 +1,18 @@
+<div class="card">
+  <p-menubar>
+    <ng-template pTemplate="start">
+      <figure class="my-0 mx-2">
+        <img class="w-2rem" src="./assets/imgs/logo.png" alt="Logo">
+      </figure>
+    </ng-template>
+    <ng-template pTemplate="end">
+      @for (item of items; track $index) {
+      <a pRipple routerLinkActive="surface-200" [routerLink]="[item?.['path']]"
+        class="p-menuitem-link p-link inline-flex justify-content-center align-items-center hover:surface-100 transition-all transition-duration-200 p-2 text-black-alpha-70 mx-1">
+        <span [class]="item.icon"></span>
+        <span class="ml-2">{{ item.label }}</span>
+      </a>
+      }
+    </ng-template>
+  </p-menubar>
+</div>

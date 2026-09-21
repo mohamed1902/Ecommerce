@@ -1,0 +1,63 @@
+<section>
+  <div class="container my-8">
+    <h1 class="my-3 font-bold capitalize">Login Form</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="sumbit()">
+      <!-- email -->
+      <div class="field">
+        <p-inputGroup>
+          <p-inputGroupAddon>
+            <i class="pi pi-at"></i>
+          </p-inputGroupAddon>
+          <input pInputText [autofocus]="true" formControlName="email" placeholder="Email" />
+        </p-inputGroup>
+        <div class="validation">
+          @if (email.dirty && email.touched) {
+          <!-- Required -->
+          @if(email.getError('required')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Email Is Required' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          <!-- Email -->
+          @if(email.getError('email')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Email Not Valid' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          }
+        </div>
+      </div>
+      <!-- password -->
+      <div class="field">
+        <p-inputGroup>
+          <p-inputGroupAddon>
+            <i class="pi pi-lock"></i>
+          </p-inputGroupAddon>
+          <input pInputText type="password" formControlName="password" placeholder="Password" />
+        </p-inputGroup>
+        <div class="validation">
+          @if (password.dirty && password.touched) {
+          <!-- Required -->
+          @if(password.getError('required')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Password Is Required' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          <!-- MinLength -->
+          @if(password.getError('minlength')){
+          <p-messages
+            [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Password must be at least 3 characters long' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          <!-- MaxLength -->
+          @if(password.getError('maxlength')){
+          <p-messages
+            [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Password cannot exceed 20 characters' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          }
+        </div>
+      </div>
+      <p-button type="sumbit" severity="warning" label="Login" />
+    </form>
+  </div>
+
+</section>
+

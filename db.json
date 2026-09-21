@@ -1,0 +1,454 @@
+{
+  "products": [
+    {
+      "id": 100,
+      "title": "Apple Airpods",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/thumbnail.webp",
+      "price": 129.99,
+      "description": "The Apple Airpods offer a seamless wireless audio experience. With easy pairing, high-quality sound, and Siri integration, they are perfect for on-the-go listening.",
+      "brand": "Apple",
+      "category": "mobile-accessories",
+      "discount": 16,
+      "popular": false
+    },
+    {
+      "id": 128,
+      "title": "Realme C35",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/thumbnail.webp",
+      "price": 149.99,
+      "description": "The Realme C35 is a budget-friendly smartphone with a focus on providing essential features for everyday use. It offers a reliable performance and user-friendly experience.",
+      "brand": "Realme",
+      "category": "smartphones",
+      "discount": 15,
+      "popular": false
+    },
+    {
+      "id": 51,
+      "title": "Boxed Blender",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/thumbnail.webp",
+      "price": 39.99,
+      "description": "The Boxed Blender is a powerful and compact blender perfect for smoothies, shakes, and more. Its convenient design and multiple functions make it a versatile kitchen appliance.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 7,
+      "popular": true
+    },
+    {
+      "id": 78,
+      "title": "Apple MacBook Pro 14 Inch Space Grey",
+      "image": "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/thumbnail.webp",
+      "price": 1999.99,
+      "description": "The MacBook Pro 14 Inch in Space Grey is a powerful and sleek laptop, featuring Apple's M1 Pro chip for exceptional performance and a stunning Retina display.",
+      "brand": "Apple",
+      "category": "laptops",
+      "discount": 5,
+      "popular": false
+    },
+    {
+      "id": 126,
+      "title": "Oppo F19 Pro Plus",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/thumbnail.webp",
+      "price": 399.99,
+      "description": "The Oppo F19 Pro Plus is a feature-rich smartphone with a focus on camera capabilities. It boasts advanced photography features and a powerful performance for a premium user experience.",
+      "brand": "Oppo",
+      "category": "smartphones",
+      "discount": 19,
+      "popular": false
+    },
+    {
+      "id": 160,
+      "title": "Samsung Galaxy Tab S8 Plus Grey",
+      "image": "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/thumbnail.webp",
+      "price": 599.99,
+      "description": "The Samsung Galaxy Tab S8 Plus in Grey is a high-performance Android tablet by Samsung. With a large AMOLED display, powerful processor, and S Pen support, it's ideal for productivity and entertainment.",
+      "brand": "Samsung",
+      "category": "laptop-accessories",
+      "discount": 13,
+      "popular": true
+    },
+    {
+      "id": 48,
+      "title": "Bamboo Spatula",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/thumbnail.webp",
+      "price": 7.99,
+      "description": "The Bamboo Spatula is a versatile kitchen tool made from eco-friendly bamboo. Ideal for flipping, stirring, and serving various dishes.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 3,
+      "popular": false
+    },
+    {
+      "id": 123,
+      "title": "iPhone 13 Pro",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/thumbnail.webp",
+      "price": 1099.99,
+      "description": "The iPhone 13 Pro is a cutting-edge smartphone with a powerful camera system, high-performance chip, and stunning display. It offers advanced features for users who demand top-notch technology.",
+      "brand": "Apple",
+      "category": "smartphones",
+      "discount": 9,
+      "popular": true
+    },
+    {
+      "id": 105,
+      "title": "Apple MagSafe Battery Pack",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/thumbnail.webp",
+      "price": 99.99,
+      "description": "The Apple MagSafe Battery Pack is a portable and convenient way to add extra battery life to your MagSafe-compatible iPhone. Attach it magnetically for a secure connection.",
+      "brand": "Apple",
+      "category": "mobile-accessories",
+      "discount": 17,
+      "popular": false
+    },
+    {
+      "id": 82,
+      "title": "New DELL XPS 13 9300 Laptop",
+      "image": "https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/thumbnail.webp",
+      "price": 1499.99,
+      "description": "The New DELL XPS 13 9300 Laptop is a compact and powerful device, featuring a virtually borderless InfinityEdge display and high-end performance for various tasks.",
+      "brand": "Dell",
+      "category": "laptops",
+      "discount": 12,
+      "popular": true
+    },
+    {
+      "id": 56,
+      "title": "Electric Stove",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/thumbnail.webp",
+      "price": 49.99,
+      "description": "The Electric Stove provides a portable and efficient cooking solution. Ideal for small kitchens or as an additional cooking surface for various culinary needs.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 14,
+      "popular": false
+    },
+    {
+      "id": 130,
+      "title": "Realme XT",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-xt/thumbnail.webp",
+      "price": 349.99,
+      "description": "The Realme XT is a feature-rich smartphone with a focus on camera technology. It comes equipped with advanced camera sensors, delivering high-quality photos and videos for photography enthusiasts.",
+      "brand": "Realme",
+      "category": "smartphones",
+      "discount": 12,
+      "popular": true
+    },
+    {
+      "id": 108,
+      "title": "iPhone 12 Silicone Case with MagSafe Plum",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/thumbnail.webp",
+      "price": 29.99,
+      "description": "The iPhone 12 Silicone Case with MagSafe in Plum is a stylish and protective case designed for the iPhone 12. It features MagSafe technology for easy attachment of accessories.",
+      "brand": "Apple",
+      "category": "mobile-accessories",
+      "discount": 14,
+      "popular": false
+    },
+    {
+      "id": 79,
+      "title": "Asus Zenbook Pro Dual Screen Laptop",
+      "image": "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/thumbnail.webp",
+      "price": 1799.99,
+      "description": "The Asus Zenbook Pro Dual Screen Laptop is a high-performance device with dual screens, providing productivity and versatility for creative professionals.",
+      "brand": "Asus",
+      "category": "laptops",
+      "discount": 11,
+      "popular": false
+    },
+    {
+      "id": 125,
+      "title": "Oppo A57",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/thumbnail.webp",
+      "price": 249.99,
+      "description": "The Oppo A57 is a mid-range smartphone known for its sleek design and capable features. It offers a balance of performance and affordability, making it a popular choice.",
+      "brand": "Oppo",
+      "category": "smartphones",
+      "discount": 2,
+      "popular": false
+    },
+    {
+      "id": 54,
+      "title": "Citrus Squeezer Yellow",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+      "price": 8.99,
+      "description": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 12,
+      "popular": true
+    },
+    {
+      "id": 101,
+      "title": "Apple AirPods Max Silver",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/thumbnail.webp",
+      "price": 549.99,
+      "description": "The Apple AirPods Max in Silver are premium over-ear headphones with high-fidelity audio, adaptive EQ, and active noise cancellation. Experience immersive sound in style.",
+      "brand": "Apple",
+      "category": "mobile-accessories",
+      "discount": 14,
+      "popular": false
+    },
+    {
+      "id": 121,
+      "title": "iPhone 5s",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/thumbnail.webp",
+      "price": 199.99,
+      "description": "The iPhone 5s is a classic smartphone known for its compact design and advanced features during its release. While it's an older model, it still provides a reliable user experience.",
+      "brand": "Apple",
+      "category": "smartphones",
+      "discount": 13,
+      "popular": false
+    },
+    {
+      "id": 80,
+      "title": "Huawei Matebook X Pro",
+      "image": "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/thumbnail.webp",
+      "price": 1399.99,
+      "description": "The Huawei Matebook X Pro is a slim and stylish laptop with a high-resolution touchscreen display, offering a premium experience for users on the go.",
+      "brand": "Huawei",
+      "category": "laptops",
+      "discount": 9,
+      "popular": true
+    },
+    {
+      "id": 50,
+      "title": "Black Whisk",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/thumbnail.webp",
+      "price": 9.99,
+      "description": "The Black Whisk is a kitchen essential for whisking and beating ingredients. Its ergonomic handle and sleek design make it a practical and stylish tool.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 10,
+      "popular": false
+    },
+    {
+      "id": 103,
+      "title": "Apple HomePod Mini Cosmic Grey",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/thumbnail.webp",
+      "price": 99.99,
+      "description": "The Apple HomePod Mini in Cosmic Grey is a compact smart speaker that delivers impressive audio and integrates seamlessly with the Apple ecosystem for a smart home experience.",
+      "brand": "Apple",
+      "category": "mobile-accessories",
+      "discount": 18,
+      "popular": true
+    },
+    {
+      "id": 127,
+      "title": "Oppo K1",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/thumbnail.webp",
+      "price": 299.99,
+      "description": "The Oppo K1 series offers a range of smartphones with various features and specifications. Known for their stylish design and reliable performance, the Oppo K1 series caters to diverse user preferences.",
+      "brand": "Oppo",
+      "category": "smartphones",
+      "discount": 18,
+      "popular": false
+    },
+    {
+      "id": 159,
+      "title": "iPad Mini 2021 Starlight",
+      "image": "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/thumbnail.webp",
+      "price": 499.99,
+      "description": "The iPad Mini 2021 in Starlight is a compact and powerful tablet from Apple. Featuring a stunning Retina display, powerful A-series chip, and a sleek design, it offers a premium tablet experience.",
+      "brand": "Apple",
+      "category": "laptop-accessories",
+      "discount": 4,
+      "popular": false
+    },
+    {
+      "id": 52,
+      "title": "Carbon Steel Wok",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/carbon-steel-wok/thumbnail.webp",
+      "price": 29.99,
+      "description": "The Carbon Steel Wok is a versatile cooking pan suitable for stir-frying, sautéing, and deep frying. Its sturdy construction ensures even heat distribution for delicious meals.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 7,
+      "popular": false
+    },
+    {
+      "id": 106,
+      "title": "Apple Watch Series 4 Gold",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-watch-series-4-gold/thumbnail.webp",
+      "price": 349.99,
+      "description": "The Apple Watch Series 4 in Gold is a stylish and advanced smartwatch with features like heart rate monitoring, fitness tracking, and a beautiful Retina display.",
+      "brand": "Apple",
+      "category": "mobile-accessories",
+      "discount": 12,
+      "popular": false
+    },
+    {
+      "id": 124,
+      "title": "iPhone X",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/thumbnail.webp",
+      "price": 899.99,
+      "description": "The iPhone X is a flagship smartphone featuring a bezel-less OLED display, facial recognition technology (Face ID), and impressive performance. It represents a milestone in iPhone design and innovation.",
+      "brand": "Apple",
+      "category": "smartphones",
+      "discount": 20,
+      "popular": false
+    },
+    {
+      "id": 49,
+      "title": "Black Aluminium Cup",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/thumbnail.webp",
+      "price": 5.99,
+      "description": "The Black Aluminium Cup is a stylish and durable cup suitable for both hot and cold beverages. Its sleek black design adds a modern touch to your drinkware collection.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 16,
+      "popular": false
+    },
+    {
+      "id": 81,
+      "title": "Lenovo Yoga 920",
+      "image": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+      "price": 1099.99,
+      "description": "The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "discount": 7,
+      "popular": false
+    },
+    {
+      "id": 104,
+      "title": "Apple iPhone Charger",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/thumbnail.webp",
+      "price": 19.99,
+      "description": "The Apple iPhone Charger is a high-quality charger designed for fast and efficient charging of your iPhone. Ensure your device stays powered up and ready to go.",
+      "brand": "Apple",
+      "category": "mobile-accessories",
+      "discount": 19,
+      "popular": false
+    },
+    {
+      "id": 129,
+      "title": "Realme X",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+      "price": 299.99,
+      "description": "The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
+      "brand": "Realme",
+      "category": "smartphones",
+      "discount": 7,
+      "popular": false
+    },
+    {
+      "id": 55,
+      "title": "Egg Slicer",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+      "price": 6.99,
+      "description": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 15,
+      "popular": false
+    },
+    {
+      "id": 102,
+      "title": "Apple Airpower Wireless Charger",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpower-wireless-charger/thumbnail.webp",
+      "price": 79.99,
+      "description": "The Apple AirPower Wireless Charger provides a convenient way to charge your compatible Apple devices wirelessly. Simply place your devices on the charging mat for effortless charging.",
+      "brand": "Apple",
+      "category": "mobile-accessories",
+      "discount": 4,
+      "popular": false
+    },
+    {
+      "id": 161,
+      "title": "Samsung Galaxy Tab White",
+      "image": "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-white/thumbnail.webp",
+      "price": 349.99,
+      "description": "The Samsung Galaxy Tab in White is a sleek and versatile Android tablet. With a vibrant display, long-lasting battery, and a range of features, it offers a great user experience for various tasks.",
+      "brand": "Samsung",
+      "category": "laptop-accessories",
+      "discount": 18,
+      "popular": false
+    },
+    {
+      "id": 53,
+      "title": "Chopping Board",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/thumbnail.webp",
+      "price": 12.99,
+      "description": "The Chopping Board is an essential kitchen accessory for food preparation. Made from durable material, it provides a safe and hygienic surface for cutting and chopping.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 8,
+      "popular": false
+    },
+    {
+      "id": 122,
+      "title": "iPhone 6",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/thumbnail.webp",
+      "price": 299.99,
+      "description": "The iPhone 6 is a stylish and capable smartphone with a larger display and improved performance. It introduced new features and design elements, making it a popular choice in its time.",
+      "brand": "Apple",
+      "category": "smartphones",
+      "discount": 7,
+      "popular": false
+    },
+    {
+      "id": 107,
+      "title": "Beats Flex Wireless Earphones",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/beats-flex-wireless-earphones/thumbnail.webp",
+      "price": 49.99,
+      "description": "The Beats Flex Wireless Earphones offer a comfortable and versatile audio experience. With magnetic earbuds and up to 12 hours of battery life, they are ideal for everyday use.",
+      "brand": "Beats",
+      "category": "mobile-accessories",
+      "discount": 6,
+      "popular": false
+    },
+    {
+      "id": 57,
+      "title": "Fine Mesh Strainer",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/thumbnail.webp",
+      "price": 9.99,
+      "description": "The Fine Mesh Strainer is a versatile tool for straining liquids and sifting dry ingredients. Its fine mesh ensures efficient filtering for smooth cooking and baking.",
+      "brand": "Generic",
+      "category": "appliances",
+      "discount": 4,
+      "popular": false
+    },
+    {
+      "id": 99,
+      "title": "Amazon Echo Plus",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+      "price": 99.99,
+      "description": "The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves as a hub for controlling smart home devices.",
+      "brand": "Amazon",
+      "category": "mobile-accessories",
+      "discount": 12,
+      "popular": true
+    }
+  ],
+  "cart": [],
+  "categories": [
+    {
+      "id": "1",
+      "name": "smartphones"
+    },
+    {
+      "id": "2",
+      "name": "laptops"
+    },
+    {
+      "id": "3",
+      "name": "mobile-accessories"
+    },
+    {
+      "id": "4",
+      "name": "laptop-accessories"
+    },
+    {
+      "id": "5",
+      "name": "appliances"
+    }
+  ],
+  "users": [
+    {
+      "name": "Mohamed Ehab",
+      "email": "mohamed@gmail.com",
+      "password": "Mohamed_1",
+      "rePassword": "Mohamed_1",
+      "id": 1
+    }
+  ]
+}

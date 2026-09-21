@@ -1,0 +1,48 @@
+<div class="flex justify-content-around align-items-center flex-wrap">
+  @for (product of products; track $index) {
+  <div [ngClass]="{'col-6': isSmallCard,'col-12 md:col-4 lg:col-3': !isSmallCard}">
+    <div [ngClass]="{'flex flex-wrap lg:flex-nowrap justify-content-center gap-2':isSmallCard}">
+      <figure [routerLink]="['/details/',product.id]" [ngClass]=" {'md:w-6rem lg:w-10rem':isSmallCard}"
+        class="m-1 shadow-2 overflow-hidden border-round-2xl cursor-pointer">
+        <img class="w-full h-full" [src]="product.image" alt="product">
+      </figure>
+      <div class="content py-1 w-full">
+        <p class="truncate-text overflow-hidden font-medium text-xs my-1">{{product.description}}</p>
+        <div class="flex align-items-center gap-2">
+          <div class="price flex gap-2 align-items-center">
+            <span class="text-color-secondary font-bold">
+              <del>14</del>
+            </span>
+            <span class="new-price font-bold">
+              <span class="text-green-400">$</span>{{product.price}}
+            </span>
+          </div>
+          <div class="offer">
+            <span class="bg-red-500 text-white p-1 border-circle text-xs">%{{product.discount}}</span>
+            <span class="font-bold text-xs px-1">off</span>
+          </div>
+        </div>
+      </div>
+      @if(!isSmallCard){
+      @if (!product.isAddToCart) {
+      <p-button (click)="onAddToCart(product); product.isAddToCart = true" label="Add To Cart" severity="warning"
+        icon="pi pi-cart-plus text-2xl" iconPos="right" styleClass="w-full my-2 uppercase" />
+      }
+      @if (product.isAddToCart) {
+      <p-button [routerLink]="['/cart/',product.id]" label="Go To Cart" severity="contrast"
+        icon="pi pi-shopping-cart text-2xl" iconPos="right" styleClass="w-full my-2 uppercase" />
+      }
+      }
+    </div>
+  </div>
+  }@empty{
+    @if(!isSmallCard){
+    <div class="flex-1 text-center">
+      <app-empty></app-empty>
+      <h2>No Product To Show <span class="text-red-500">{{searchKey}}</span></h2>
+      <p-button [routerLink]="['/home']" label="Back To Home" severity="warning" icon="pi pi-cart-plus text-2xl"
+        iconPos="right" styleClass="w-full my-2 uppercase" />
+    </div>
+    }
+  }
+</div>

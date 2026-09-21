@@ -1,0 +1,113 @@
+<section>
+  <div class="container my-8">
+    <h1 class="my-3 font-bold capitalize">Register Form</h1>
+    <form [formGroup]="registeationForm" (ngSubmit)="sumbit()">
+      <!-- userName -->
+      <div class="field">
+        <p-inputGroup>
+          <p-inputGroupAddon>
+            <i class="pi pi-user"></i>
+          </p-inputGroupAddon>
+          <input pInputText [autofocus]="true" formControlName="name" placeholder="Username" />
+        </p-inputGroup>
+        <div class="validation">
+          @if (name.dirty && name.touched) {
+          <!-- Required -->
+          @if(name.getError('required')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Name Is Required' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          <!-- MinLength -->
+          @if(name.getError('minlength')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Must Be At Least 3 Char' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          <!-- MaxLength -->
+          @if(name.getError('maxlength')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Cannot Exceed 20 Char' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          }
+        </div>
+      </div>
+      <!-- email -->
+      <div class="field">
+        <p-inputGroup>
+          <p-inputGroupAddon>
+            <i class="pi pi-at"></i>
+          </p-inputGroupAddon>
+          <input pInputText formControlName="email" placeholder="Email" />
+        </p-inputGroup>
+        <div class="validation">
+          @if (email.dirty && email.touched) {
+          <!-- Required -->
+          @if(email.getError('required')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Email Is Required' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          <!-- Email -->
+          @if(email.getError('email')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Email Not Valid' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          }
+        </div>
+      </div>
+      <!-- password -->
+      <div class="field">
+        <p-inputGroup>
+          <p-inputGroupAddon>
+            <i class="pi pi-lock"></i>
+          </p-inputGroupAddon>
+          <input pInputText type="password" formControlName="password" placeholder="Password" />
+        </p-inputGroup>
+        <div class="validation">
+          @if (password.dirty && password.touched) {
+          <!-- Required -->
+          @if(password.getError('required')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Password Is Required' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          <!-- MinLength -->
+          @if(password.getError('minlength')){
+          <p-messages
+            [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Password must be at least 3 characters long' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          <!-- MaxLength -->
+          @if(password.getError('maxlength')){
+          <p-messages
+            [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'Password cannot exceed 20 characters' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          }
+        </div>
+      </div>
+      <!-- rePassword -->
+      <div class="field">
+        <p-inputGroup>
+          <p-inputGroupAddon>
+            <i class="pi pi-lock"></i>
+          </p-inputGroupAddon>
+          <input pInputText type="password" formControlName="rePassword" placeholder="rePassword" />
+        </p-inputGroup>
+        <div class="validation">
+          @if (rePassword.dirty && rePassword.touched) {
+          <!-- Required -->
+          @if(rePassword.getError('required')){
+          <p-messages [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'rePassword Is Required' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          <!-- Not Match -->
+          @if(rePassword.getError('PassNotMatch')){
+          <p-messages
+            [value]="[{ severity: 'error', summary: 'Validation Error' , detail: 'rePassword Not Match Password' }]"
+            [enableService]="false" [closable]="false" />
+          }
+          }
+        </div>
+      </div>
+      <p-button type="sumbit" severity="warning" label="Submit" />
+    </form>
+  </div>
+</section>

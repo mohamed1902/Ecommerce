@@ -1,0 +1,16 @@
+
+<section>
+  <div class="container-fluid">
+    <h1 class="text-color-secondary uppercase my-5">All categories</h1>
+    <div class="grid justify-content-around">
+      @for (category of allCategory; track $index) {
+        <div class="md:col-6 lg:col-4">
+          <figure [routerLink]="['/specificCategory', category.name]" class="m-1 shadow-2 overflow-hidden border-round-2xl cursor-pointer">
+            <img class="w-full" [src]="getImageCategory(category.name)" [alt]="category">
+          </figure>
+          <h2 class="text-color-secondary capitalize text-center">{{category.name}}</h2>
+        </div>
+      }
+    </div>
+  </div>
+</section>
